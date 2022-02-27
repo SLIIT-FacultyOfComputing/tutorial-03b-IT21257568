@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-void print(int len, int wth);
-void input(int len, int wth);
+void print(int len, int wth);//function declaration
+void input(int &len, int &wth);//function declaration
 
 // Do not change the main() function
 int main() {
    int length = 10, width = 5;
-   input(length, width);
-   print(length, width);
+   input(length, width);//function calling
+   print(length, width);//function calling
    return 0;
 }
 
@@ -19,3 +19,10 @@ void print(int len, int wth) {
 }
 
 // Implement the Input Function here
+void input(int &len,int &wth)
+{
+  cout << "Length : ";
+  cin >> len;
+  cout << "Width : ";
+  cin >> wth;
+}

@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//function declaration
 int volume(int height, int width, int length);
 
 int main() {
@@ -21,7 +21,7 @@ int main() {
     cin >> box2Width;
     cout << "Enter Box 2 Length : ";
     cin >> box2Length;
-    
+    //function calling
     totalVolume = volume(box1Height, box1Width, box1Length)
              + volume(box2Height, box2Width, box2Length);
              
@@ -29,5 +29,13 @@ int main() {
     
     return 0;
 }
+//function implementation
 
-// Implement the Volume() function here
+int volume(int height, int width, int length)
+{
+  int volume;
+  volume = height * width * length;
+  return volume;
+}
+
+
